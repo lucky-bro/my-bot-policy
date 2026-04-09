@@ -13,12 +13,12 @@
     const error = params.get("error");
 
     if (error) {
-      document.getElementById("status").innerText = "Ошибка: " + error;
+      document.getElementById("status").innerText = "error: " + error;
     } else if (code) {
-      document.getElementById("status").innerText = "✅ Код получен!";
+      document.getElementById("status").innerText = "✅ Code received!";
       document.getElementById("result").innerText = "code=" + code;
     } else {
-      document.getElementById("status").innerText = "Параметры не найдены";
+      document.getElementById("status").innerText = "Params not found";
     }
   </script>
 </body>
